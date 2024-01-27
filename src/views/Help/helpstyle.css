@@ -1,0 +1,63 @@
+.help-container {
+	margin: 100px 100px;
+}
+
+
+.helpButtons {
+    border: none;
+	background-color: transparent;
+	font-weight: bold ;
+	color:white ;
+}
+
+.helpText {
+    animation: helpAnim 1s ease 0s 1 normal forwards;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: rgb(153, 153, 153);
+}
+
+@keyframes helpAnim {
+	0% {
+		opacity: 0;
+		transform: rotateX(-70deg);
+		transform-origin: bottom;
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotateX(0);
+		transform-origin: bottom;
+	}
+}
+
+#Help-container {
+	
+    padding-left: 4rem;
+	padding-right: 15rem;
+    background-color: rgba(146, 154, 145, 0.5);
+    
+
+}
+
+.text-help {
+    color:rgb(134, 220, 241);
+    font-size: 30px;
+    font-weight: 800;
+    /* font-family: Impact; */
+}
+
+.help-container p a {
+    color:rgb(0, 194, 243);
+    text-decoration: none;
+}
+
+.help-container p {
+	line-height: 1.5;
+	color: white;
+}
+
+.help-container h2 {
+	line-height: 1.5;
+	color: white;
+	margin-top: 150px;
+}
