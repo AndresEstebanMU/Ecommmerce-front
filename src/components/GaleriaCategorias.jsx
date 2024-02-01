@@ -9,7 +9,7 @@ export const GaleriaCategorias = () => {
 
       <Link to="/cervezas" className="image-gallery-with-text-overlay" >
       <div className="text-with-text-overlay">CERVEZAS</div>
-        <img src="/src/assets/fotos-galeria-categorias/cerveza.avif" className="box" type="text" alt="" />
+        <img src="./../assets/fotos-galeria-categorias/cerveza.avif" className="box" type="text" alt="" />
        
       </Link>
       <Link to="/Espumantes" className="image-gallery-with-text-overlay" >
