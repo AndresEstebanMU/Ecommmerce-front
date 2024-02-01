@@ -14,7 +14,7 @@ export const GaleriaCategorias = () => {
       </Link>
       <Link to="/Espumantes" className="image-gallery-with-text-overlay" >
       <div className="text-with-text-overlay">ESPUMANTES</div>
-        <img src="/src/assets/fotos-galeria-categorias/espumante 2.jpg" className="box" alt="" />
+        <img src="../assets/fotos-galeria-categorias/espumante 2.jpg" className="box" alt="" />
       </Link>
 
       <Link to="/Gin" className="image-gallery-with-text-overlay" >
@@ -24,7 +24,7 @@ export const GaleriaCategorias = () => {
 
       <Link to="/Pisco" className="image-gallery-with-text-overlay" >
       <div className="text-with-text-overlay">PISCO</div>
-        <img src="/src/assets/fotos-galeria-categorias/pisco.png" className="box" alt="" />
+        <img src="../assets/fotos-galeria-categorias/pisco.png" className="box" alt="" />
       </Link>
       <Link to="/Ron" className="image-gallery-with-text-overlay" >
       <div className="text-with-text-overlay">RON</div>
