@@ -14,7 +14,7 @@ export const GaleriaCategorias = () => {
       </Link>
       <Link to="/Espumantes" className="image-gallery-with-text-overlay" >
       <div className="text-with-text-overlay">ESPUMANTES</div>
-        <img src="../assets/fotos-galeria-categorias/espumante 2.jpg" className="box" alt="" />
+        <img src="https://z-p3-scontent.fscl26-1.fna.fbcdn.net/v/t39.30808-6/399546044_846311834164431_97772664977177131_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=3635dc&_nc_ohc=sMbtGvpZKPIAX-yzUus&_nc_zt=23&_nc_ht=z-p3-scontent.fscl26-1.fna&oh=00_AfDpr172NSqImpcV4Y6D4m4l5sY8AXsayc9TWmN7tN7naA&oe=65C0A855" className="box" alt="" />
       </Link>
 
       <Link to="/Gin" className="image-gallery-with-text-overlay" >

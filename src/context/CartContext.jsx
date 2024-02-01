@@ -16,13 +16,13 @@ export const CartProvider = ({ children }) => {
 
   const getProducts = async () => {
     await axios
-      .get("https://ecommerce-backend-jv3a.onrender.com/products")
+      .get("https://back-labotika.onrender.com/products")
       .then(({ data }) => setProducts(data.products));
   };
 
   const getProductsCart = async () => {
     return await axios
-      .get("https://ecommerce-backend-jv3a.onrender.com/products-cart")
+      .get("https://back-labotika.onrender.com/products-cart")
       .then(({ data }) => setCartItems(data.productsCart))
       .catch((error) => console.error(error));
   };
@@ -35,7 +35,7 @@ export const CartProvider = ({ children }) => {
   const addItemToCart = async (product) => {
     const { name, img, price } = product;
 
-    await axios.post("https://ecommerce-backend-jv3a.onrender.com/products-cart", { name, img, price });
+    await axios.post("https://back-labotika.onrender.com/products-cart", { name, img, price });
 
     getProducts();
     getProductsCart();
@@ -44,11 +44,11 @@ export const CartProvider = ({ children }) => {
   const editItemToCart = async (id, query, amount) => {
     if (query === "del" && amount === 1) {
       await axios
-        .delete(`https://ecommerce-backend-jv3a.onrender.com/products-cart/${id}`)
+        .delete(`https://back-labotika.onrender.com/products-cart/${id}`)
         .then(({ data }) => console.log(data));
     } else {
       await axios
-        .put(`https://ecommerce-backend-jv3a.onrender.com/products-cart/${id}?query=${query}`, {
+        .put(`https://back-labotika.onrender.com/products-cart/${id}?query=${query}`, {
           amount,
         })
         .then(({ data }) => console.log(data));

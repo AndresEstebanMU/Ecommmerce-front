@@ -34,7 +34,7 @@ const Cart = () => {
 
   const createPreference = async () => {
     try {
-      const response = await axios.post("https://ecommerce-backend-jv3a.onrender.com/create_preference", {
+      const response = await axios.post("https://back-labotika.onrender.com/create_preference", {
         description: "Producto",
         price: total,
         quantity: 1,
