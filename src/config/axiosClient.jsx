@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosClient = axios.create({
-    baseURL: "http://localhost:4000"
+    baseURL: "https://ecommerce-backend-jv3a.onrender.com/"
 })
 
 export default axiosClient;
