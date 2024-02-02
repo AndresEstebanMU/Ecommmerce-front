@@ -48,12 +48,13 @@ Contactate con alguno de los autores.
 ## Autor
 
 Este proyecto fue creado por:
-Cecilia sánchez valenzuela    Cevictoria@gmail.com 
+Cecilia Sánchez Valenzuela    Cevictoria@gmail.com 
 Andrés Esteban Muñoz Urrutia  andresestebanmu@gmail.com
 Francis Yañez Merino          francisymerino@gmail.com
-Pablo José Oyola Lepe         paoyola.dwfs9@bootcampudd.cl													
+Pablo José Oyola Lepe         poyola@gmail.com													
 
 
 ## Licencia
 
 Este proyecto está bajo la [Licencia MIT](LICENSE).
+
