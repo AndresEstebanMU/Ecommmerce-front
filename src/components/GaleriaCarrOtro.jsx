@@ -1,5 +1,3 @@
-// import { Link } from "react-router-dom"
-
 
 import { useContext } from "react";
 import CartContext from "../context/CartContext";
@@ -14,9 +12,9 @@ const GaleriaCarrOtro = () => {
 
   return (
 
-    <div  >  {/* className={styles.productsContainer} */}
+    <div  > 
       
-          <div  >  {/* className={styles.product} */}
+          <div  >  
             <section className="galeria-container">
               <div className="galeria">
                 {products &&

@@ -29,7 +29,7 @@ import Jugos from '../db/OtrosDb/Jugos'
 import Auth from '../views/auth/Auth'
 import Profile from '../views/profile/Profile'
 import { CardBlog } from '../views/CardBlog'
-// import Product from '../views/product/Product'
+
 
 
 
@@ -73,7 +73,7 @@ const AppRoutes = () => {
                 <Route path='/user/profile' element={<Profile />} />
                 <Route path='/cardBlog' element={<CardBlog />} />
 
-                {/* <Route path='/productById/:_id' element={<Product />} /> */}
+               
             </Route>
         </Routes>
     </>

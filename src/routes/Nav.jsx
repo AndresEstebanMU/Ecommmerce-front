@@ -8,11 +8,6 @@ import CartContext from "../context/CartContext";
 import NavbarRes from "./NavRes";
 import SkeletonNav from "../components/SkeletonNav";
 
-// import Navbar from "./NavRes";
-// import Container from 'react-bootstrap/Container';
-// import Nav from 'react-bootstrap/Nav';
-// import Navbar from 'react-bootstrap/Navbar';
-
 
 
 const Nav = () => {
@@ -57,17 +52,14 @@ const { products, isLoading } = useContext(CartContext);
               {/* id="login-logo" */}
               
               </Link>}
-            {/* <Link to="/login-register" className="text-link">Registrarse / Login</Link> */}
+            
             
             {authStatus &&  
             <Link to="/user/profile" className="text-link">Mi perfil</Link>
-            // &&
-            // <Link to="/user/options" className="text-link">Opciones</Link>
+            
             }
             
-            {/* <Link to="/wishlist" className="text-link"><img src="https://www.seekpng.com/png/full/903-9034129_png-file-svg-contorno-corazon-sin-fondo.png" alt="corazon" width={'25px'} /></Link> */}
             
-            {/* <Link to="/buy" className="text-link"><img src="https://c0.klipartz.com/pngpicture/1008/303/gratis-png-carrito-de-compras.png" alt="carrito de compras" width={'60px'} /></Link> */}
               
             <Cart />
           </div>
@@ -107,11 +99,7 @@ const { products, isLoading } = useContext(CartContext);
               </ul> 
             </li>
             <li><Link to="/cervezas" className="text-link-2 source-sans" >Cervezas</Link>
-              {/* <div className="new-container">
-                <a href="#">Link 4</a>
-                <a href="#">Link 5</a>
-                <a href="#">Link 6</a>
-              </div>  */}
+              
             </li>
             <li><Link to="/destilados" className="text-link-2 source-sans" >Destilados</Link>
               <div className="new-container">
@@ -178,25 +166,13 @@ const { products, isLoading } = useContext(CartContext);
               </div> 
             </li>
             <li><Link to="/espumantes" className="text-link-2 source-sans" >Espumantes</Link>
-              {/* <div className="new-container">
-                <a href="#">Link 10</a>
-                <a href="#">Link 11</a>
-                <a href="#">Link 12</a>
-              </div>  */}
+              
             </li>
             <li><Link to="/licores" className="text-link-2 source-sans" >Licores</Link>
-              {/* <div className="new-container">
-                <a href="#">Link 13</a>
-                <a href="#">Link 14</a>
-                <a href="#">Link 15</a>
-              </div>   */}
+              
             </li>
             <li><Link to="/ofertas" className="text-link-2 source-sans" >Ofertas!</Link>
-              {/* <div className="new-container">
-                <a href="#">Link 16</a>
-                <a href="#">Link 17</a>
-                <a href="#">Link 18</a>
-              </div>  */}
+              
             </li>
             <li><Link to="/otros" className="text-link-2 source-sans" >Otros</Link>
               <div className="new-container">
@@ -249,23 +225,7 @@ const { products, isLoading } = useContext(CartContext);
           
         </nav>
        
-        {/* <Navbar /> */}
-
-        {/* prueba */}
-        {/* <nav id="nav3">
-          <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Galería</a>
-              <div className="new-container">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-              </div>
-            </li>
-            <li><a href="#">Contacto</a></li>
-          </ul>
-        </nav> */}
+        
     </header>
   )
 }
@@ -274,6 +234,3 @@ export default Nav
 
 
 
-{/* <a as={Link} to="/">Home</a>
-<a as={Link} to="/catalogo">Catalogo</a>
-<a as={Link} to="/about">Nosotros</a> */}

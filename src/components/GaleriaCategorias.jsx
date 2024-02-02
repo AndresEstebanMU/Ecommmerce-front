@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom"
 import "./GaleriaCategorias.scss"
-//import React, { useState } from 'react';
-//import axios from 'axios';
+
 
 export const GaleriaCategorias = () => {
   return (
-    <section className="gallery"  >    {/*id="Galeria-container"*/}
+    <section className="gallery"  >    
 
       <Link to="/cervezas" className="image-gallery-with-text-overlay" >
       <div className="text-with-text-overlay">CERVEZAS</div>
@@ -71,91 +70,5 @@ export const GaleriaCategorias = () => {
 
 
 
-
-// export const GaleriaCategorias = () => {
-//     return (
-//         <section className="gallery" id="Galeria-container">
-            
-//                 <Link to="/cervezas" className="contenedor-img-gal" >
-//                     <div className="texto-gal">Cervezas</div>
-//                     <img src="/src/assets/fotos-galeria-categorias/cerveza.avif" alt="" />
-//                 </Link>
-//                 <Link to="/Espumantes" id="" >Espumantes
-//                     <img src="/src/assets/fotos-galeria-categorias/espumante 2.jpg" alt="" />
-//                 </Link>
-//                 <Link to="/Gin" id="" >Gin
-//                     <img src="/src/assets/fotos-galeria-categorias/gin.avif" alt="" />
-//                 </Link>
-//                 <Link to="/Pisco" id="" >Pisco
-//                     <img src="/src/assets/fotos-galeria-categorias/pisco.png" alt="" />
-//                 </Link>
-//                 <Link to="/Ron" id="" >Ron
-//                     <img src="/src/assets/fotos-galeria-categorias/ron.avif" alt="" />
-//                 </Link>
-//                 <Link to="/Tequila" id="" >Tequila
-//                     <img src="/src/assets/fotos-galeria-categorias/tequila.avif" alt="" />
-//                 </Link>
-//                 <Link to="/Vino" id="" >Vino
-//                     <img src="/src/assets/fotos-galeria-categorias/vino.avif" alt="" />
-//                 </Link>
-//                 <Link to="/Vodka" id="" >Vodka
-//                     <img src="/src/assets/fotos-galeria-categorias/vodka.avif" alt="" />
-//                 </Link>
-//                 <Link to="/Whisky" id="" >Whisky
-//                     <img src="/src/assets/fotos-galeria-categorias/whisky.avif" alt="" />
-//                 </Link>
-//                 {/*<Link to="/Whisky" id="" >Licores
-//                     <img src=" " alt="" />
-//     </Link>*/}
-//                 <Link to="/src/assets/SinAlcohol" id="" >Sin Alcohol
-//                     <img src="" alt="" />
-//                 </Link>
-//                 <Link to="/src/assets/Otros" id="" >Otros
-//                     <img src="" alt="" />
-//                 </Link>
-//                 <Link to="/src/assets/Ofertas" id="" >Ofertas</Link>
-
-            
-//         </section>
-
-//     )
-// }
-
-
-
-
-{/*const getAllProducts = () => {
-  const [product, setProduct] = useState(null);
-
-  const handleSearch = (event) => {
-    event.preventDefault();
-    const productName = event.target.productName.value;
-    axios.get(`https://localhost:4000/products?name=${productName}`)
-      .then(response => {
-        setProduct(response.data);
-      })
-      .catch(error => {
-        console.error('Error fetching product: ', error);
-      });
-  }
-
-  return (
-    <div>
-      <form onSubmit={handleSearch}>
-        <input type="text" name="productName" placeholder="Search by product name" />
-        <button type="submit">Buscar</button>
-      </form>
-     {product && (
-        <div>
-          <h2>{product.name}</h2>
-          <p>Precio: ${product.price}</p>
-          <p>Descripción: {product.description}</p>
-        </div>
-      )} 
-    </div>
-  );
-}
-
-export default { getAllProducts  }*/}
 
 

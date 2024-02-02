@@ -1,31 +1,3 @@
-// import GinDb from "../../db/DestiladosDb/GinDb"
-// import PiscosDb from "../../db/DestiladosDb/PiscosDb"
-// import RonDb from "../../db/DestiladosDb/RonDb"
-// import VodkaDb from "../../db/DestiladosDb/VodkaDb"
-// import WhiskyDb from "../../db/DestiladosDb/WhiskyDb"
-// import TequilasDb from "../../db/DestiladosDb/tequilaDb"
-
-
-
-
-
-
-
-
-// const Destilados = () => {
-//   return (
-//     <>
-//       <PiscosDb />
-//       <TequilasDb />
-//       <RonDb />
-//       <VodkaDb />
-//       <WhiskyDb />
-//       <GinDb />
-//     </>
-//   )
-// }
-
-// export default Destilados
 
 
 

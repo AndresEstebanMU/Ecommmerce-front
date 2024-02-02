@@ -1,21 +1,4 @@
-// import Aguas from "../../db/OtrosDb/Aguas"
-// import Bebidas from "../../db/OtrosDb/Bebidas"
-// import Energeticas from "../../db/OtrosDb/Energeticas"
-// import Jugos from "../../db/OtrosDb/Jugos"
 
-
-// const Otros = () => {
-//   return (
-//     <>
-//       <Aguas />
-//       <Bebidas />
-//       <Energeticas />
-//       <Jugos />
-//     </>
-//   )
-// }
-
-// export default Otros
 
 
 import { useContext } from "react";

@@ -10,7 +10,7 @@ const comments = [
   { id: 3, text: 'Encontré todos los ingredientes que necesitaba para preparar cócteles sofisticados en casa. La descripción detallada de cada licor facilitó la elección. ¡El paquete llegó en perfecto estado! 🍸📦', author: 'LunaEscarlata21', star: '★★★★★' },
   { id: 4, text: 'Esta tienda superó mis expectativas. Compré un whisky de malta escocés y quedé impresionado con la calidad y el servicio. El seguimiento del pedido fue excelente. ¡Recomendado para los amantes del buen whisky! 🥃🌟', author: 'AventuraExplorer', star: '★★★★★' },
   { id: 5, text: 'La sección de rones es impresionante. Pedí varios para probar y todos fueron deliciosos. El envío fue rápido, y los precios son muy competitivos. Definitivamente mi nueva tienda de licores favorita. ¡Salud! 🍹😊', author: 'TriviaMaster88', star: '★★★★★' },
-  // Agrega más comentarios según sea necesario
+  
 ];
 
 const CommentCarousel = () => {

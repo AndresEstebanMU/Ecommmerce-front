@@ -87,7 +87,7 @@ header {
 }
 
 .botika {
-  background-image: url(./assets/Botika.jpg);
+  background-image: url(./assets/botikaOnline.jpg);
   width: 60px;
   height: 60px;
   background-position: center;
@@ -203,7 +203,7 @@ header {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
-    /* display: block; */
+    
     min-width: 100%;
   }
   
@@ -282,11 +282,6 @@ header {
     padding: 10px;
     box-sizing: border-box;
     z-index: 2; /* Asegura que el contenedor esté por encima del resto del contenido */
-    
-    /* probando transiciones */
-    /* transition-property: height;
-    transition-duration: 2s; */
-    /* transition: max-height 0.3s ease-out; */
     animation: navAnim 0.5s ease 0s 1 normal forwards;
   }
 
@@ -325,8 +320,6 @@ header {
   .galeria-container {
     margin: 0 auto;
     max-width: 1200px;
-    /* position: relative; */
-    
   }
 
   .galeria {
@@ -336,7 +329,6 @@ header {
     max-height: 650px;
     gap: 2%;
     width: 88%;
-    /* justify-content: center; */
   }
 
   #carrusel-cont {
@@ -359,10 +351,6 @@ header {
   }
 
   .v1-i {
-    /* background-image: url(./assets/img/v1.png);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: 60%; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -398,10 +386,6 @@ header {
   }
 
   #v2-i {
-     /* background-image: url(./assets/img/v1.png);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: 60%; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -437,10 +421,6 @@ header {
   }
 
   #v3-i {
-     /* background-image: url(./assets/img/v1.png);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: 60%; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -475,10 +455,7 @@ header {
   }
 
   #v4-i {
-     /* background-image: url(./assets/img/v1.png);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: 60%; */
+    
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -513,10 +490,6 @@ header {
   }
 
   #v5-i {
-    /* background-image: url(./assets/img/v1.png);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: 60%; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -535,7 +508,6 @@ header {
     border-radius: 10px;
     height: 40px;
     width: 40%;
-    /* z-index: 3; */
   }
 
 
@@ -999,12 +971,7 @@ footer h6 {
 
 
 @media (max-width: 650px) {
-  /* .nav-res {
-    display: block;
-    position: relative;
-    z-index: 10000;
-    margin-top: 200px;
-  } */
+ 
 
   #nav2 {
     display: none;
@@ -1201,13 +1168,11 @@ footer h6 {
   position: fixed;
   background-color: rgba(0, 0, 27, 0.808);
   padding: 20px;
-  /* text-align: center; */
-  /* border: 1px solid #ccc; */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   z-index: 1000;
   width: 55%;
   height: 55%;
-  /* display: flex; */
+  
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -1247,7 +1212,7 @@ footer h6 {
 }
 
 .input-button {
-  /* border-radius: 20px; */
+ 
   border: none;
 }
 
@@ -1315,78 +1280,7 @@ footer h6 {
 }
 
 
-/* NavbarRes.css */
-/* body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-} */
 
-/* header {
-  background-color: #333;
-  color: #fff;
-  padding: 15px 20px;
-} */
-
-/* .nav9 {
-  margin-top: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo9 {
-  font-size: 24px;
-}
-
-.navbar9 {
-  list-style: none;
-  display: flex;
-}
-
-.navbar9 li {
-  margin-right: 20px;
-}
-
-.navbar9 a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-}
-
-.menu-toggle9 {
-  font-size: 24px;
-  cursor: pointer;
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .navbar9 {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 70px;
-      left: 0;
-      width: 100%;
-      background-color: #333;
-  }
-
-  .navbar9 .show {
-      display: flex;
-  }
-
-  .navbar9 li {
-      margin: 0;
-      text-align: center;
-      padding: 10px;
-      border-bottom: 1px solid #555;
-  }
-
-  .menu-toggle9 {
-      display: block;
-  }
-}
- */
 
 
 
@@ -1425,7 +1319,6 @@ footer h6 {
 }
 
 .blog-orden {
-  /* width: 50%; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1435,7 +1328,6 @@ footer h6 {
 .que-son {
   width: 50%;
   display: flex;
-  /* justify-self: center; */
   margin-bottom: 40px;
 }
 
@@ -1443,7 +1335,6 @@ footer h6 {
 @media (max-width: 1600px) {
   .blog-recetas {
     display: flex;
-    /* align-items: center; */
     flex-direction: column;
     width: 95%;
   }
@@ -1477,7 +1368,6 @@ footer h6 {
   .que-son {
     width: 95%;
     display: flex;
-    /* justify-self: center; */
     margin-bottom: 40px;
   }
 }
@@ -1509,13 +1399,10 @@ footer h6 {
 }
 
 
-/* .blog-orden .img {
-  width: 600px;
-} */
+
 
 .blog-recetas {
   display: flex;
-  /* align-items: center; */
  
 }
 

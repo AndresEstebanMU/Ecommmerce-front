@@ -18,56 +18,31 @@ const MiCarrusel = () => {
     <Carousel id='carrusel-cont' activeIndex={index} onSelect={handleSelect} interval={null} indicators={false} controls={false}>
       <Carousel.Item>
         <GaleriaParaCarr />
-        {/* <Carousel.Caption>
-          <h3>Primer Slide</h3>
-          <p>Descripción del primer slide.</p>
-        </Carousel.Caption> */}
+       
       </Carousel.Item>
 
       <Carousel.Item>
         <GaleriaCarrCer />
-        {/* <img
-          className="d-block w-100"
-          src="imagen2.jpg"
-          alt="Segunda Imagen"
-        />
-        <Carousel.Caption>
-          <h3>Segundo Slide</h3>
-          <p>Descripción del segundo slide.</p>
-        </Carousel.Caption> */}
+       
       </Carousel.Item>
 
       <Carousel.Item>
         <GaleriaCarrDes />
         
-        {/* <img
-          className="d-block w-100"
-          src="imagen3.jpg"
-          alt="Tercera Imagen"
-        />
-        <Carousel.Caption>
-          <h3>Tercer Slide</h3>
-          <p>Descripción del tercer slide.</p>
-        </Carousel.Caption> */}
+       
       </Carousel.Item>
 
       <Carousel.Item>
         <GaleriaCarrLic />
-        {/* <Carousel.Caption>
-          <h3>Primer Slide</h3>
-          <p>Descripción del primer slide.</p>
-        </Carousel.Caption> */}
+        
       </Carousel.Item>
 
       <Carousel.Item>
         <GaleriaCarrOtro />
-        {/* <Carousel.Caption>
-          <h3>Primer Slide</h3>
-          <p>Descripción del primer slide.</p>
-        </Carousel.Caption> */}
+       
       </Carousel.Item>
 
-      {/*elementos Carousel.Item según sea necesario */}
+      
 
       <div id='carousel-titles' >
         <button className={index === 0 ? 'active' : ''} onClick={() => handleSelect(0)}>Vinos</button>

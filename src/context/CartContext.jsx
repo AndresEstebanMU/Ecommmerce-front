@@ -2,8 +2,6 @@ import { createContext, useEffect, useState } from "react";
 import axios from "axios";
 
 
-// import axiosClient from "../config/axiosClient";
-// import productReducer from "./products/productReducer";
 
 
 /* Creamos el context, se le puede pasar un valor inicial */
@@ -61,45 +59,7 @@ export const CartProvider = ({ children }) => {
   };
 
 
-  // 
-//   const initialState = {
-//     products: [],
-//     productById: [{
-//         _id: "",
-//         name: "",
-//         sku: "",
-//         price: 0,
-//         image: "",
-//         stock: ""
-//     }]
-// }
-
-//   const [productState, dispatch] = useReducer(productReducer, initialState)
-
-//   const getProductss = async() => {
-//     const response = await axiosClient.get("/products")
-//     const productos = response.data.info;
-    
-//     dispatch({
-//         type: "GET_PRODUCTS",
-//         payload: productos
-//     })
-// }
-
-//   const getProductById = async(_id) => {
-//     try {
-//         const response = await axiosClient.get(`/productById/${_id}`);
-//         const productInfo = response.data.product;
-
-//         dispatch({
-//             type: "GET_PRODUCT",
-//             payload: productInfo 
-//         })
-//     } catch (error) {
-//         console.log(error)
-//     }
-// } 
-  // 
+ 
 
 
   return (
@@ -117,6 +77,6 @@ export default CartContext;
 
 
 
-// , getProducts, getProductById, productss: productState.products, product: productState.product
+
 
 

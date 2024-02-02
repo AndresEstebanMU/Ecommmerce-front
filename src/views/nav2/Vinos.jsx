@@ -1,20 +1,3 @@
-// import VinosBlancos from "../../db/VinosDb/VinosBlancos"
-// import VinosTintos from "../../db/VinosDb/VinosTintos"
-
-
-
-
-
-// const Vinos = () => {
-//   return (
-//     <>
-//       <VinosBlancos />
-//       <VinosTintos />
-//     </>
-//   )
-// }
-
-// export default Vinos
 
 
 

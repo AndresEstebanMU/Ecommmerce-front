@@ -5,6 +5,11 @@
   justify-content: flex-end;
   font-family: Roboto;
   z-index: 3;
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size:larger;
 
   .buttonCartContainer {
     position: absolute;
@@ -12,6 +17,8 @@
     margin-right: 20px;
     cursor: pointer;
     z-index: 2;
+    
+    
 
     svg {
       height: 25px;
@@ -26,6 +33,7 @@
       align-items: center;
       justify-content: center;
       border-radius: 999px;
+      
     }
     .productsNumber {
       height: 20px;
@@ -50,7 +58,7 @@
     margin-right: 20px;
     border-radius: 30px;
     width: 400px;
-    background-color: rgb(112, 77, 194) !important;
+    background-color: #139cdb !important;
     color: white;
 
     h2 {
@@ -80,6 +88,16 @@
       border-style: groove;
       border-color: #0c0042a8;
       font-weight: 540;
+      
+      
+    }
+
+    .total div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
     }
 
     .total button:hover {
@@ -127,5 +145,7 @@
     margin-right: 10px !important;
     cursor: pointer;
     z-index: 2;
+    
   }
 }
+

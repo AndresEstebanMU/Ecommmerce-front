@@ -1,6 +1,4 @@
-// body {
-//     background-color: #121214;
-// }
+
 
 .gallery {
     column-count: 6;
@@ -30,9 +28,9 @@
     font-size: 30px;
     font-weight: 300;
     text-transform: uppercase;
-    // text-align:center;
+    
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    // color:darkred;
+    
     position: absolute;
     z-index: 1;
     
@@ -46,10 +44,9 @@
 
 .text-with-text-overlay  {
     text-align: center;
-    // margin-left: 100px;
-    // text-shadow: 0 0 10px #f0f, 0 0 20px #f0f, 0 0 30px #f0f;
+  
     font-size: 2em;
-    //   font-family: 'Arial', sans-serif;
+   
     color: #020018; /* Color del texto principal */
     text-shadow: 0 0 10px rgb(118, 118, 168), 0 0 20px rgb(51, 51, 184), 0 0 30px rgb(53, 53, 175); /* Sombra del texto con efecto neon */
     transition: text-shadow 0.5s ease-in-out;

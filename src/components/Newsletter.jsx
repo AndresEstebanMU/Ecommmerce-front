@@ -16,7 +16,7 @@ const Formulario = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí puedes agregar la lógica para manejar los datos del formulario
+    
     console.log('Datos del formulario:', formData);
   };
 

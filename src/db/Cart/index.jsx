@@ -128,7 +128,7 @@ const Cart = () => {
                   <h3>Pagar con Tarjeta Débito / Crédito</h3>
                   <p className='price'>${total}</p>
                   <button onClick={handleBuy}>Redireccionar a Pago Seguro</button>
-                  {preferenceId && <Wallet initialization={{ preferenceId }} />}
+                  <div>{preferenceId && <Wallet initialization={{ preferenceId }} />}</div>
                 </div>
               </div>
             </div>

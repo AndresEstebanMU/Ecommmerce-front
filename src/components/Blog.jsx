@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-// import { CardBlog } from "../views/CardBlog";
+
 
 
 
@@ -15,7 +15,7 @@ export const Blog = () => {
               <h1>Visita el blog de la botika amiga y experimenta las recetas que hemos <br />preparado para ti!
               </h1>
               <Link to='/cardBlog' id="linkblog">IR AL BLOG</Link>
-                {/* <CardBlog /> */}
+                
             </div>
           </section>
         </>

@@ -1,4 +1,4 @@
-// import { Link } from "react-router-dom"
+
 
 
 import { useContext } from "react";
@@ -14,9 +14,9 @@ const GaleriaCarrDes = () => {
 
   return (
 
-    <div  >  {/* className={styles.productsContainer} */}
+    <div  >  
       
-          <div  >  {/* className={styles.product} */}
+          <div  >  
             <section className="galeria-container">
               <div className="galeria">
                 {products &&

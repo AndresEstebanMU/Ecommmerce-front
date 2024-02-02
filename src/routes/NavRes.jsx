@@ -1,31 +1,4 @@
-// // // Navbar.js
-// import { useState } from 'react';
-// // import './Navbar.css';
 
-// const NavbarRes = () => {
-//   const [showMenu, setShowMenu] = useState(false);
-
-//   const toggleMenu = () => {
-//     setShowMenu(!showMenu);
-//   };
-
-//   return (
-//     <header>
-//       <nav className='nav9'>
-//         <div className="logo9">Tu Logo</div>
-//         <ul className={`navbar9 ${showMenu ? 'show' : ''}`}>
-//           <li><a href="#">Inicio</a></li>
-//           <li><a href="#">Acerca de</a></li>
-//           <li><a href="#">Servicios</a></li>
-//           <li><a href="#">Contacto</a></li>
-//         </ul>
-//         <div className="menu-toggle9" onClick={toggleMenu}>&#9776;</div>
-//       </nav>
-//     </header>
-//   );
-// };
-
-// export default NavbarRes;
 
 
 
@@ -80,8 +53,7 @@ function BasicExample() {
               </Link>}</div>
             <div>{authStatus &&  
             <Link to="/user/profile" className="text-link">Mi perfil</Link>
-            // &&
-            // <Link to="/user/options" className="text-link">Opciones</Link>
+            
             }</div>
         
             <div id='lupaRes'><Products /></div>

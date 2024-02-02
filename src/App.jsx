@@ -27,25 +27,3 @@ const App = () => {
 
 export default App;
 
-
-
-
-
-
-// function App() {
-
-//   return (
-//     <>
-//       <AppRoutes />
-//     </>
-//   )
-// }
-
-// export default App
-
-
-
-
-
-
-// App.js
