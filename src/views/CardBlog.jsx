@@ -9,7 +9,7 @@ export const CardBlog = () => {
       <div className='blog-orden'>
         <div className='que-son'>
           <Card className="card text-white bg-secondary ms-3">
-            <Card.Img className='img' variant="top" src="https://okdiario.com/img/2016/05/21/recetas-cocteles-fruta-sin-alcohol.jpg" />
+            <Card.Img className='img' variant="top" src="https://mejorconsalud.as.com/wp-content/uploads/2017/12/4-recetas-cocteles-sin-licor-500x333.jpg?auto=webp&quality=45&width=1920&crop=16:9,smart,safe" />
             <Card.Body>
               <Card.Title>¿Qué son los cócteles nutritivos?</Card.Title>
               <Card.Text>
@@ -116,7 +116,7 @@ export const CardBlog = () => {
       <div className='blog-orden'>
         <div className='que-son'>
           <Card className="card text-white bg-secondary ms-3">
-            <Card.Img className='img' variant="top" src="https://okdiario.com/img/2016/05/21/recetas-cocteles-fruta-sin-alcohol.jpg" />
+            <Card.Img className='img' variant="top" src="https://enlacocina.b-cdn.net/wp-content/uploads/2017/08/cena-de-verano-1024x576.jpg.webp" />
             <Card.Body>
               <Card.Title>Coctleria de verano</Card.Title>
               <Card.Text>
