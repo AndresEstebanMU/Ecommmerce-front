@@ -1,15 +1,16 @@
 import { useContext } from "react";
 import CartContext from "../../context/CartContext";
 import styles from "../../db/Products/styles.module.scss";
+import CardSkeleton from "../../components/CardSkeleton";
 
 const Bebidas = () => {
   /* Traemos del context la funcion para agregar un producto */
-  const { addItemToCart, products } = useContext(CartContext);
+  const { addItemToCart, products, isLoading } = useContext(CartContext);
 
   return (
     <div className={styles.productsContainer}>
+      {isLoading && <CardSkeleton cards={30} />}
       {products &&
-      
         products.filter(products => products.category === "bebidas").map((product, i) => (
           <div key={i} className={styles.product}>
             <img src={product.img} alt={product.name} />

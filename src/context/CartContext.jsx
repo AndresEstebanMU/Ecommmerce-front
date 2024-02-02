@@ -13,11 +13,13 @@ export const CartProvider = ({ children }) => {
   /* Creamos un estado para el carrito */
   const [cartItems, setCartItems] = useState([]);
   const [products, setProducts] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   const getProducts = async () => {
     await axios
       .get("https://back-labotika.onrender.com/products")
       .then(({ data }) => setProducts(data.products));
+                          setIsLoading(false);
   };
 
   const getProductsCart = async () => {
@@ -103,7 +105,7 @@ export const CartProvider = ({ children }) => {
   return (
     /* Envolvemos el children con el provider y le pasamos un objeto con las propiedades que necesitamos por value */
     <CartContext.Provider
-      value={{ cartItems, products, addItemToCart, editItemToCart}}
+      value={{ cartItems, products, addItemToCart, editItemToCart, isLoading}}
     >
       {children}
     </CartContext.Provider>

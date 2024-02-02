@@ -1,12 +1,7 @@
-/* mientras trabajo */
-* {
-    /* background-color: bisque; */
+* {  
     margin: 0;
-    padding: 0;
-    
+    padding: 0; 
 }
-/* mientras trabajo */
-
 
 
 body {
@@ -15,18 +10,13 @@ body {
 
 
 
-
-
-
 /* popup */
 .age-gate {
   position: fixed;
   background: rgba(17, 17, 17, 0.9);
   padding: 20px;
-  /* text-align: center; */
-  /* border: 1px solid #ccc; */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  z-index: 1000;
+  z-index: 3000;
   width: 100%;
   height: 100%;
   display: flex;
@@ -68,7 +58,6 @@ body {
 header {
     display: flex;
     flex-direction: column;
-    /* position: fixed; */
     width: 100%;
 }
 
@@ -79,13 +68,14 @@ header {
     position: fixed;
     width: 100%;
     justify-content: space-between;
-    /* padding-right: 20px; */
     background-color: rgb(233, 233, 233);
     align-items: center;
     gap: 15px;
     z-index: 200;
     top: 0px;
     height: 60px;
+    font-size: large;
+    font-weight: 600;
 }
 
 .nav1-left {
@@ -155,8 +145,6 @@ header {
     text-decoration: none;
     color: black;
     background-color: transparent;
-    /* margin-left: 50px;
-    margin-right: 50px; */
 }
 
 .text-link-2:hover {
@@ -207,9 +195,6 @@ header {
     display: none;
     position: absolute;
     background-color: #fff;
-    /* min-width: 160px; */
-    /* min-width: 100%; */
-    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
     z-index: 1;
     
   }
@@ -228,7 +213,6 @@ header {
   
   /*Muestra el menu cuando se hace hover*/
   .dropdown:hover .dropdown-content{
-    /* display: block; */
     display: flex;
     
   }
@@ -263,11 +247,6 @@ header {
     border-radius: 30px;
   }
 
-  /* prueba */
-  /* #nav3 {
-    background-color: #333;
-    padding: 10px;
-  } */
   
   ul {
     list-style-type: none;
@@ -992,6 +971,13 @@ footer h6 {
     
 }
 
+.new-container {
+  display: none;
+  position: fixed;
+  top: 150px; /*Ajusta la posición según tus necesidades*/
+  
+}
+
   #carouselHome {
     right: -900px;
     
@@ -1549,4 +1535,14 @@ footer h6 {
   display: none;
 }
 
-
+/* Skeleton */
+.card-skeleton {
+  width: 200px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 10px 26px 20px 14px;
+}
