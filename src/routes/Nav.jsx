@@ -5,9 +5,12 @@ import { Button } from "react-bootstrap";
 import UserContext from "../context/user/UserContext";
 import Products from "../db/Products";
 import CartContext from "../context/CartContext";
+import NavbarRes from "./NavRes";
 
 // import Navbar from "./NavRes";
-
+// import Container from 'react-bootstrap/Container';
+// import Nav from 'react-bootstrap/Nav';
+// import Navbar from 'react-bootstrap/Navbar';
 
 
 
@@ -36,6 +39,7 @@ const { products } = useContext(CartContext);
 
   return (
     <header>
+      
         <nav id="nav1">
           <div className="nav1-left" >
             <Link to="/"><div className="botika"></div></Link>
@@ -65,6 +69,11 @@ const { products } = useContext(CartContext);
             <Cart />
           </div>
         </nav>
+
+
+        <NavbarRes />
+
+
         <nav id="nav2">
           
             <li><Link to="/vinos" className="text-link-2 source-sans" >

@@ -30,7 +30,7 @@ const Products = () => {
         
       </button>
       
-      <div  className={isVisible ? 'age-gate2' : 'inp'}>
+      <div  className={isVisible ? 'buscador' : 'inp'}>
       <input
                 type="text"
                 value={search}

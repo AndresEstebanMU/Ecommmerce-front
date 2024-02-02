@@ -50,7 +50,7 @@ const Footer = () => {
           <br />
           <div>
             <p>TU BOTIKA ONLINE FAVORITA</p>
-            <p><a href="">Política de privacidad</a></p>
+            {/* <p><a href="">Política de privacidad</a></p> */}
           </div>
             
           
@@ -71,15 +71,15 @@ const Footer = () => {
       <div className="footer-container">        
           
             <p><a href="google.com">Acerca</a></p>
-            <p>|</p>
+            <p></p>
             <p><a href="google.com">Política de Privacidad</a></p>
-            <p>|</p>
+            <p></p>
             <p><a href="google.com">Cookies</a></p>
-            <p>|</p>
+            <p></p>
             <p><a href="google.com">Contacto de prensa</a></p>
-            <p>|</p>
+            <p></p>
             <p><a href="google.com">Trabaja con nosotros</a></p>
-            <p>|</p>
+            <p></p>
             <p><a href="google.com">Certificaciones</a></p>
            
       </div>

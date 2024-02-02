@@ -6,7 +6,7 @@ function FooterReserva() {
   return (
     <div className='footerReserva'>
       <br />
-      <h5>Usa tu medio de pago favorito</h5>
+      <h5>Tu medio de pago favorito!</h5>
       
       {/* <Button variant="primary" className='bresh' >Buscar mesa</Button>{' '} */}
       <br />

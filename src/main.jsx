@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom'
 import App from './App.jsx'
 import { CartProvider } from './context/CartContext.jsx'
 import UserProvider from './context/user/UserProvider.jsx'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 

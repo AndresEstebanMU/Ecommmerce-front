@@ -7,6 +7,8 @@
 }
 /* mientras trabajo */
 
+
+
 body {
   background-color: rgb(0, 0, 27) !important;
 }
@@ -297,7 +299,7 @@ header {
     top: 100px; /*Ajusta la posición según tus necesidades*/
     left: 0;
     width: 100%;
-    background-color: #333;
+    background-color: rgb(3, 3, 41) !important;
     padding: 10px;
     box-sizing: border-box;
     z-index: 2; /* Asegura que el contenedor esté por encima del resto del contenido */
@@ -727,6 +729,7 @@ footer {
   flex-direction: column;
   padding: 10px 100px;
   text-align: center;
+  align-items: center;
 }
 
 #footerIzq a {
@@ -738,6 +741,7 @@ footer {
 .socialmedia-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   text-align: center;
   padding: 10px 100px;
   border-left-style: dashed;
@@ -751,7 +755,7 @@ footer h6 {
 
 .socialmedia-container a {
   text-decoration: none;
-  color: #FFF;
+  color: #000000;
 }
 
 #rrss {
@@ -767,8 +771,16 @@ footer h6 {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
   text-align: center;
   padding: 10px 100px;
+}
+
+#payments {
+ 
+  width: 300px;
+  height: 150px;
+  
 }
 
 .footerReserva {
@@ -909,7 +921,31 @@ footer h6 {
 
 
 
-@media (max-width: 991px) {
+@media (max-width: 990px) {
+  
+
+  #navres {
+    display: block !important;
+    top: -100px;
+    background-color: rgb(233, 233, 233) !important;
+  }
+
+  #listaRes {
+    display: flex !important;
+    align-items: flex-end !important;
+
+  }
+
+  #lupaRes {
+    margin-right: 10px;
+  }
+ 
+
+
+  #nav1 {
+    display: none;
+  }
+
   .nav1-left {
     display: flex;
     align-items: center;
@@ -927,10 +963,11 @@ footer h6 {
     justify-content: center;
     align-items: center;
     background-color: rgb(134, 220, 241);
-    margin-top: 60px;
+    margin-top: -100px;
     gap: 0%;
     height: 60px;
     font-size: 10px;
+    
 }
 
   #carouselHome {
@@ -958,8 +995,30 @@ footer h6 {
   } */
 
   #nav2 {
-    visibility: hidden;
+    display: none;
     margin-top: 10px;
+  }
+
+  .input {
+    width: 300px !important;
+    border-radius: 50px;
+    max-height: 100px !important;
+    border: #000;
+    
+  }
+
+  .buscador {
+    
+    padding: 20px;
+    
+    z-index: 1000;
+    width: 80% !important;
+    height: 60%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #F9F1EF;
+    overflow: auto;
   }
 }
 
@@ -1092,7 +1151,7 @@ footer h6 {
 
 /* Search */
 
-.age-gate2 {
+.buscador {
   position: fixed;
   background-color: rgba(0, 0, 27, 0.808);
   padding: 20px;
@@ -1215,15 +1274,16 @@ footer h6 {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-}
+} */
 
-header {
+/* header {
   background-color: #333;
   color: #fff;
   padding: 15px 20px;
-}
+} */
 
-.nav9 {
+/* .nav9 {
+  margin-top: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1279,8 +1339,8 @@ header {
   .menu-toggle9 {
       display: block;
   }
-} */
-
+}
+ */
 
 
 
@@ -1347,3 +1407,16 @@ header {
   width: 500px;
   height: 300px;
 }
+
+
+
+
+
+
+/* responsive nav */
+#navres {
+  margin-top: 100px !important;
+  display: none;
+}
+
+
