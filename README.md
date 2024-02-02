@@ -1,4 +1,5 @@
 
+
 # Botillería Online "La botika"
 
 La Botika es una plataforma digital diseñada para facilitar la compra de productos alcohólicos a través de internet. Este proyecto ofrece a los usuarios la conveniencia de explorar y adquirir una variedad de bebidas alcohólicas desde la comodidad de sus hogares. La plataforma incluye características como registro de usuarios, navegación intuitiva a través de un catálogo de productos, carrito de compras para gestionar selecciones y proceso de checkout seguro. Además cuenta con verificación de edad para cumplir con regulaciones legales, y medidas de seguridad de autenticación y protección de datos. La Botika busca proporcionar una experiencia de compra segura, conveniente y satisfactoria para sus usuarios.
@@ -13,11 +14,14 @@ La Botika es una plataforma digital diseñada para facilitar la compra de produc
   - JavaScrip
   - React.js
   - Bootstrap
+  - Deploy: Netlify
 
 - **Backend:**
   - Node.js
   - Express.js
   - MongoDB
+  - Deploy: Render
+	
 
 ## Características Principales
 
