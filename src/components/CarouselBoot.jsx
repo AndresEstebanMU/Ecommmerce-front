@@ -15,7 +15,7 @@ const MiCarrusel = () => {
   
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect} interval={null} indicators={false} controls={false}>
+    <Carousel id='carrusel-cont' activeIndex={index} onSelect={handleSelect} interval={null} indicators={false} controls={false}>
       <Carousel.Item>
         <GaleriaParaCarr />
         {/* <Carousel.Caption>

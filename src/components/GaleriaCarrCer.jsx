@@ -59,7 +59,7 @@ const GaleriaCarrCer = () => {
 
                 {products &&
                 products.filter(products => products.sku === "CERV0047").map((product, i) => (
-                  <div id="v3" key={i}><div id="v3-i">
+                  <div id="v3" key={i}><div id="v3-i" className="arreglo">
                     <img src={product.img} alt={product.name} />
                         <p>
                           {product.name} - ${product.price}
