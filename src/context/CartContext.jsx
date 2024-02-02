@@ -16,7 +16,7 @@ export const CartProvider = ({ children }) => {
 
   const getProducts = async () => {
     await axios
-      .get("https://back-labotika.onrender.com//products")
+      .get("https://back-labotika.onrender.com/products")
       .then(({ data }) => setProducts(data.products));
   };
 
