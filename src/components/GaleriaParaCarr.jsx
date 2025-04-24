@@ -20,7 +20,7 @@ const GaleriaParaCarr = () => {
             <section className="galeria-container">
           <div className="galeria">
             {products &&
-              products.filter(products => products.sku === "VINBLA0012").map((product, i) => (
+              products.filter(products => products.sku === "00000001").map((product, i) => (
                 <div className="v1" key={i} >
                   <div className="v1-i">
                     <div>
@@ -40,7 +40,7 @@ const GaleriaParaCarr = () => {
                 </div>))}
 
                 {products &&
-                products.filter(products => products.sku === "VINTIN0019").map((product, i) => (
+                products.filter(products => products.sku === "00000001").map((product, i) => (
                   <div  id="v2" key={i} >
                     <div id="v2-i">
                       
