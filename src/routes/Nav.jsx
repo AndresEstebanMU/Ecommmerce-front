@@ -78,7 +78,7 @@ const { products, isLoading } = useContext(CartContext);
                   <Link to="/vinoTinto" className="nav2-orden">
                   {isLoading && <SkeletonNav cards={1} />}
                   {products &&
-                products.filter(products => products.sku === "VINTIN0003").map((product, i) => (
+                products.filter(products => products.sku === "00000001").map((product, i) => (
                     <div key={i} className="nav2-foto">
                       <img src={product.img} alt={product.name} />
                     </div>
@@ -89,7 +89,7 @@ const { products, isLoading } = useContext(CartContext);
                 <li><Link to="/vinoBlanco" className="nav2-orden">
                   {isLoading && <SkeletonNav cards={1} />}
                   {products &&
-                  products.filter(products => products.sku === "VINBLA0010").map((product, i) => (
+                  products.filter(products => products.sku === "vb000001").map((product, i) => (
                     <div key={i} className="nav2-foto">
                       <img src={product.img} alt={product.name} />
                     </div>
@@ -106,7 +106,7 @@ const { products, isLoading } = useContext(CartContext);
                 <li><Link to="/pisco" className="nav2-orden dest-orden">
                   {isLoading && <SkeletonNav cards={1} />}
                   {products &&
-                  products.filter(products => products.sku === "PIS0043").map((product, i) => (
+                  products.filter(products => products.sku === "p0000001").map((product, i) => (
                   <div key={i} className="nav2-foto">
                     <img src={product.img} alt={product.name} />
                   </div>
@@ -116,7 +116,7 @@ const { products, isLoading } = useContext(CartContext);
                 <li><Link to="/tequila" className="nav2-orden dest-orden">
                   {isLoading && <SkeletonNav cards={1} />}
                   {products &&
-                  products.filter(products => products.sku === "TEQ0020").map((product, i) => (
+                  products.filter(products => products.sku === "t0000001").map((product, i) => (
                   <div key={i} className="nav2-foto ">
                     <img src={product.img} alt={product.name} />
                   </div>
@@ -126,7 +126,7 @@ const { products, isLoading } = useContext(CartContext);
                 <li><Link to="/ron" className="nav2-orden dest-orden">
                   {isLoading && <SkeletonNav cards={1} />}
                   {products &&
-                  products.filter(products => products.sku === "RON0015").map((product, i) => (
+                  products.filter(products => products.sku === "r0000001").map((product, i) => (
                   <div key={i} className="nav2-foto">
                     <img src={product.img} alt={product.name} />
                   </div>
@@ -136,7 +136,7 @@ const { products, isLoading } = useContext(CartContext);
                 <li><Link to="/vodka" className="nav2-orden dest-orden">
                   {isLoading && <SkeletonNav cards={1} />}
                   {products &&
-                  products.filter(products => products.sku === "VOD0009").map((product, i) => (
+                  products.filter(products => products.sku === "v0000001").map((product, i) => (
                   <div key={i} className="nav2-foto">
                     <img src={product.img} alt={product.name} />
                   </div>
@@ -146,7 +146,7 @@ const { products, isLoading } = useContext(CartContext);
                 <li><Link to="/whisky" className="nav2-orden dest-orden">
                   {isLoading && <SkeletonNav cards={1} />}
                   {products &&
-                  products.filter(products => products.sku === "WHIS0023").map((product, i) => (
+                  products.filter(products => products.sku === "w0000001").map((product, i) => (
                   <div key={i} className="nav2-foto">
                     <img src={product.img} alt={product.name} />
                   </div>
@@ -156,7 +156,7 @@ const { products, isLoading } = useContext(CartContext);
                 <li><Link to="/gin" className="nav2-orden dest-orden">
                   {isLoading && <SkeletonNav cards={1} />}
                   {products &&
-                  products.filter(products => products.sku === "GIN0016").map((product, i) => (
+                  products.filter(products => products.sku === "g0000001").map((product, i) => (
                   <div key={i} className="nav2-foto">
                     <img src={product.img} alt={product.name} />
                   </div>
@@ -179,7 +179,7 @@ const { products, isLoading } = useContext(CartContext);
                 <li><Link to="/agua" className="nav2-orden">
                   {isLoading && <SkeletonNav cards={1} />}
                   {products &&
-                  products.filter(products => products.sku === "AGU0002").map((product, i) => (
+                  products.filter(products => products.sku === "a0000001").map((product, i) => (
                   <div key={i} className="nav2-foto">
                     <img src={product.img} alt={product.name} />
                   </div>
@@ -189,7 +189,7 @@ const { products, isLoading } = useContext(CartContext);
                 <li><Link to="/bebidas" className="nav2-orden">
                   {isLoading && <SkeletonNav cards={1} />}
                   {products &&
-                  products.filter(products => products.sku === "BEB0019").map((product, i) => (
+                  products.filter(products => products.sku === "b0000001").map((product, i) => (
                   <div key={i} className="nav2-foto">
                     <img src={product.img} alt={product.name} />
                   </div>
@@ -199,7 +199,7 @@ const { products, isLoading } = useContext(CartContext);
                 <li><Link to="/energeticas" className="nav2-orden">
                   {isLoading && <SkeletonNav cards={1} />}
                   {products &&
-                  products.filter(products => products.sku === "ENER0005").map((product, i) => (
+                  products.filter(products => products.sku === "en000001").map((product, i) => (
                   <div key={i} className="nav2-foto">
                     <img src={product.img} alt={product.name} />
                   </div>
@@ -209,7 +209,7 @@ const { products, isLoading } = useContext(CartContext);
                 <li><Link to="/jugos" className="nav2-orden">
                   {isLoading && <SkeletonNav cards={1} />}
                   {products &&
-                  products.filter(products => products.sku === "JUG0006").map((product, i) => (
+                  products.filter(products => products.sku === "j0000001").map((product, i) => (
                   <div key={i} className="nav2-foto">
                     <img src={product.img} alt={product.name} />
                   </div>

@@ -345,7 +345,7 @@ header {
   
 
   .v1 img{
-    width: 100%;
+    width: 80%;
     height: auto;
     padding-bottom: 0px;  
   }
@@ -369,7 +369,7 @@ header {
     border-radius: 10px;
     height: 40px;
     width: 40%;
-    margin-top: 10%;
+    margin-bottom: 10%;
   }
 
   #v2 {
