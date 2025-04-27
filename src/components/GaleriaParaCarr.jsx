@@ -40,7 +40,7 @@ const GaleriaParaCarr = () => {
                 </div>))}
 
                 {products &&
-                products.filter(products => products.sku === "00000001").map((product, i) => (
+                products.filter(products => products.sku === "00000002").map((product, i) => (
                   <div  id="v2" key={i} >
                     <div id="v2-i">
                       
@@ -60,7 +60,7 @@ const GaleriaParaCarr = () => {
                   </div> ))}
 
                 {products &&
-                products.filter(products => products.sku === "VINBLA0024").map((product, i) => (
+                products.filter(products => products.sku === "00000003").map((product, i) => (
                   <div  id="v3" key={i}>
                     <div id="v3-i">
                       
@@ -80,7 +80,7 @@ const GaleriaParaCarr = () => {
                   </div> ))}
 
                 {products &&
-                products.filter(products => products.sku === "VINBLA0003").map((product, i) => (
+                products.filter(products => products.sku === "00000004").map((product, i) => (
                   <div  id="v4" key={i} >
                     <div id="v4-i">
                       
@@ -100,7 +100,7 @@ const GaleriaParaCarr = () => {
                   </div> ))}
                 
                 {products &&
-                products.filter(products => products.sku === "VINTIN0046").map((product, i) => (
+                products.filter(products => products.sku === "00000005").map((product, i) => (
                   <div  id="v5" key={i} >
                     <div id="v5-i">
                       

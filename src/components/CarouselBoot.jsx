@@ -13,7 +13,6 @@ const MiCarrusel = () => {
     setIndex(selectedIndex);
   };
   
-
   return (
     <Carousel id='carrusel-cont' activeIndex={index} onSelect={handleSelect} interval={null} indicators={false} controls={false}>
       <Carousel.Item>
@@ -28,8 +27,7 @@ const MiCarrusel = () => {
 
       <Carousel.Item>
         <GaleriaCarrDes />
-        
-       
+             
       </Carousel.Item>
 
       <Carousel.Item>

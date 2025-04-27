@@ -20,7 +20,7 @@ const GaleriaCarrDes = () => {
             <section className="galeria-container">
               <div className="galeria">
                 {products &&
-                products.filter(products => products.sku === "WHIS0004").map((product, i) => (
+                products.filter(products => products.sku === "p0000001").map((product, i) => (
                   <div className="v1" key={i} >
                     <div className="v1-i dest-arreglo">
                       <div>
@@ -40,7 +40,7 @@ const GaleriaCarrDes = () => {
                 </div>))}
 
                 {products &&
-                products.filter(products => products.sku === "RON0022").map((product, i) => (
+                products.filter(products => products.sku === "t0000001").map((product, i) => (
                   <div id="v2" key={i} ><div id="v2-i">
                     <img src={product.img} alt={product.name} />
                     
@@ -58,7 +58,7 @@ const GaleriaCarrDes = () => {
                   </div> ))}
 
                 {products &&
-                products.filter(products => products.sku === "TEQ0012").map((product, i) => (
+                products.filter(products => products.sku === "r0000001").map((product, i) => (
                   <div id="v3" key={i}><div id="v3-i" className="arreglo">
                     <img src={product.img} alt={product.name} />
                     
@@ -76,7 +76,7 @@ const GaleriaCarrDes = () => {
                   </div> ))}
 
                 {products &&
-                products.filter(products => products.sku === "GIN0006").map((product, i) => (
+                products.filter(products => products.sku === "v0000001").map((product, i) => (
                   <div id="v4" key={i} ><div id="v4-i">
                     <img src={product.img} alt={product.name} />
                     
@@ -94,7 +94,7 @@ const GaleriaCarrDes = () => {
                   </div> ))}
                 
                 {products &&
-                products.filter(products => products.sku === "VOD0006").map((product, i) => (
+                products.filter(products => products.sku === "w0000001").map((product, i) => (
                   <div id="v5" key={i} ><div id="v5-i">
                     <img src={product.img} alt={product.name} />
                     
