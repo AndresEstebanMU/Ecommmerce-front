@@ -13,13 +13,13 @@ const Facturacion = () => {
       <div className="text-help">Facturación</div>
       <br />
 
-      <p> <button
+      <button
         aria-expanded={isExpanded}
         onClick={toggleContent}
         className='helpButtons'
       >
         {isExpanded ? '- ¿Cómo puedo facturar mi compra?' : '+ ¿Cómo puedo facturar mi compra?'}
-      </button> </p>
+      </button> 
 
       {isExpanded && (
         <div role="region" aria-labelledby="toggleButton" className='helpText'>
