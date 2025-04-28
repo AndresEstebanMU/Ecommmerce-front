@@ -2,14 +2,14 @@
 
 
 
-const Wishlist = () => {
+/* const Wishlist = () => {
   return (
     <div>
       Wishlist
-      {/* <Products /> */}
+      {<Products />}
       
     </div>
   )
 }
 
-export default Wishlist
+export default Wishlist */

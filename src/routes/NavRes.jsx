@@ -20,7 +20,7 @@ function BasicExample() {
 
     const [userName, setUserName] = useState("No conectado")
    
-    console.log(infoUser)
+    /* console.log(infoUser) */
     useEffect(() => {
         const getInfoUser = async() => {
             await verifyToken()

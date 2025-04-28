@@ -254,7 +254,7 @@ header {
     padding: 0;
     display: flex;
     justify-content: space-around;
-    
+    margin-bottom: 0 !important;
   }
   
   li {
@@ -299,11 +299,11 @@ header {
     }
   }
   
-  li:hover .new-container {
+  ul:hover .new-container {
     display: flex;
     justify-content: center;
     height: 160px;
-   max-height: 200px;
+    max-height: 200px;
   }
 
 

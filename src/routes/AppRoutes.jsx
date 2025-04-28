@@ -2,10 +2,10 @@ import { Routes, Route} from 'react-router-dom'
 import Layout from '../components/Layout/Layout'
 import Home from '../views/Home'
 import Help from '../views/Help'
-import Login from '../views/Login'
-import Search from '../views/Search'
-import Wishlist from '../views/Wishlist'
-import Buy from '../views/Buy'
+/* import Login from '../views/Login' */
+/* import Search from '../views/Search' */
+/* import Wishlist from '../views/Wishlist' */
+/* import Buy from '../views/Buy' */
 import Vinos from '../views/nav2/Vinos'
 import Cervezas from '../views/nav2/Cervezas'
 import Destilados from '../views/nav2/Destilados'
@@ -41,10 +41,10 @@ const AppRoutes = () => {
             <Route path='/' element={<Layout />}>
                 <Route path='/' element={<Home />} />
                 <Route path='/help' element={<Help />} />
-                <Route path='/login-register' element={<Login />} />
-                <Route path='/search' element={<Search />} />
-                <Route path='/wishlist' element={<Wishlist />} />
-                <Route path='/buy' element={<Buy />} />
+               {/*  <Route path='/login-register' element={<Login />} /> */}
+                {/* <Route path='/search' element={<Search />} /> */}
+               {/*  <Route path='/wishlist' element={<Wishlist />} /> */}
+                {/* <Route path='/buy' element={<Buy />} /> */}
                 <Route path='/vinos' element={<Vinos />} />
                 <Route path='/cervezas' element={<Cervezas />} />
                 <Route path='/destilados' element={<Destilados />} />

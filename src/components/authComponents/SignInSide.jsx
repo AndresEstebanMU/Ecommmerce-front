@@ -21,7 +21,7 @@ export default function SignInSide() {
         password: ""
     }
 
-    console.log(`Este es el estado de signUp: ${signUp}`)
+    /* console.log(`Este es el estado de signUp: ${signUp}`) */
 
     const [user, setUser] = useState(initialValues)
 
@@ -32,7 +32,7 @@ export default function SignInSide() {
     }))
    }
 
-   console.log(user)
+   /* console.log(user) */
 
   const handleSubmit = (event) => {
     event.preventDefault();

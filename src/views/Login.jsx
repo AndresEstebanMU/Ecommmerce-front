@@ -1,6 +1,6 @@
 
 
-const Login = () => {
+/* const Login = () => {
   return (
     <div>Login</div>
   )
@@ -9,3 +9,4 @@ const Login = () => {
 export default Login
 
 
+ */

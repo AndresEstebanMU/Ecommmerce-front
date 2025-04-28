@@ -1,9 +1,9 @@
 
-
+/* 
 const Buy = () => {
   return (
     <div>Buy</div>
   )
 }
 
-export default Buy
+export default Buy */

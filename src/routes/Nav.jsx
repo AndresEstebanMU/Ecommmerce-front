@@ -1,26 +1,24 @@
 import { Link } from "react-router-dom"
 import Cart from "../db/Cart"
-import { useContext, useEffect, useState } from "react"
+import { useContext/* , useEffect, useState  */} from "react"
 import { Button } from "react-bootstrap";
 import UserContext from "../context/user/UserContext";
 import Products from "../db/Products";
 import CartContext from "../context/CartContext";
-import NavbarRes from "./NavRes";
+/* import NavbarRes from "./NavRes"; */
 import SkeletonNav from "../components/SkeletonNav";
 
 
 
 const Nav = () => {
+    const { /* infoUser, */ signOut, authStatus/* , verifyToken */ } = useContext(UserContext)
 
-  // 
+   /*  const [userName, setUserName] = useState("No conectado") */
 
-    const { infoUser, signOut, authStatus, verifyToken } = useContext(UserContext)
-
-
-    const [userName, setUserName] = useState("No conectado")
+    const { products, isLoading } = useContext(CartContext);
    
-    console.log(infoUser)
-    useEffect(() => {
+   /*  console.log(infoUser) */
+  /*   useEffect(() => {
         const getInfoUser = async() => {
             await verifyToken()
             setUserName(infoUser.name)
@@ -28,10 +26,22 @@ const Nav = () => {
         getInfoUser()
     } , [userName])
 
-  // 
-// 
-const { products, isLoading } = useContext(CartContext);
-// 
+ */
+
+    //probando sin esto
+   /*  useEffect(() => {
+      const getInfoUser = async () => {
+          await verifyToken();
+      };
+      getInfoUser();
+  }, []);  */// Solo al montar
+  
+ /*  useEffect(() => {
+      if (infoUser?.name) {
+          setUserName(infoUser.name);
+      }
+  }, [infoUser]); */
+  
 
   return (
     <header>
@@ -55,7 +65,7 @@ const { products, isLoading } = useContext(CartContext);
             
             
             {authStatus &&  
-            <Link to="/user/profile" className="text-link">Mi perfil</Link>
+            <Link to="/user/profile" className="text-link">Mi Perfil</Link>
             
             }
             
@@ -66,12 +76,12 @@ const { products, isLoading } = useContext(CartContext);
         </nav>
 
 
-        <NavbarRes />
+        {/* <NavbarRes /> */}
 
 
         <nav id="nav2">
           
-            <li><Link to="/vinos" className="text-link-2 source-sans" >
+            <ul><Link to="/vinos" className="text-link-2 source-sans" >
               Vinos</Link>
               <ul className="new-container">
                 <li>
@@ -97,11 +107,11 @@ const { products, isLoading } = useContext(CartContext);
                   Vino Blanco
                   </Link></li>
               </ul> 
-            </li>
+            </ul>
             <li><Link to="/cervezas" className="text-link-2 source-sans" >Cervezas</Link>
               
             </li>
-            <li><Link to="/destilados" className="text-link-2 source-sans" >Destilados</Link>
+            <ul><Link to="/destilados" className="text-link-2 source-sans" >Destilados</Link>
               <div className="new-container">
                 <li><Link to="/pisco" className="nav2-orden dest-orden">
                   {isLoading && <SkeletonNav cards={1} />}
@@ -164,7 +174,7 @@ const { products, isLoading } = useContext(CartContext);
                   Gin
                   </Link></li>
               </div> 
-            </li>
+            </ul>
             <li><Link to="/espumantes" className="text-link-2 source-sans" >Espumantes</Link>
               
             </li>
@@ -174,7 +184,7 @@ const { products, isLoading } = useContext(CartContext);
             <li><Link to="/ofertas" className="text-link-2 source-sans" >Ofertas!</Link>
               
             </li>
-            <li><Link to="/otros" className="text-link-2 source-sans" >Otros</Link>
+            <ul><Link to="/otros" className="text-link-2 source-sans" >Otros</Link>
               <div className="new-container">
                 <li><Link to="/agua" className="nav2-orden">
                   {isLoading && <SkeletonNav cards={1} />}
@@ -215,9 +225,10 @@ const { products, isLoading } = useContext(CartContext);
                   </div>
                    ))}
                   <p>Jugos</p>
-                  </Link></li>
+                  </Link>
+                </li>
               </div>
-            </li>
+            </ul>
 
 
 

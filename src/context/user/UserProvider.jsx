@@ -10,11 +10,14 @@ const UserProvider = ({children}) => {
   const navigate = useNavigate()
   //initialState
   const initialState = {
-    infoUser: [],
-    authStatus: false
+    infoUser: {},
+    authStatus: false,
+    loadingUser: true
   }
 
   const [userState, dispatch] = useReducer(userReducer, initialState)
+
+  
 
   //useReducer ---> estados
 
@@ -24,10 +27,11 @@ const UserProvider = ({children}) => {
     try {
       const userLogin = await axiosClient.post("/login", user)
       const userOn = userLogin.data
-      console.log(userOn)
-      console.log(userOn.token)
+     /*  console.log(userOn)
+      console.log(userOn.token) */
 
       if(userOn.success){
+        localStorage.setItem("token", userOn.token);
         dispatch({
           type: "REGISTER/LOGIN",
           payload: userOn.token
@@ -43,10 +47,11 @@ const UserProvider = ({children}) => {
     try {
       const userRegister = await axiosClient.post("/user", user)
       const userOn = userRegister.data
-      console.log(userOn)
-      console.log(userOn.token)
+     /*  console.log(userOn)
+      console.log(userOn.token) */
 
       if(userOn.success){
+        localStorage.setItem("token", userOn.token);
         dispatch({
           type: "REGISTER/LOGIN",
           payload: userOn.token
@@ -68,6 +73,8 @@ const UserProvider = ({children}) => {
       delete axiosClient.defaults.headers.common["Authorization"]
     }
 
+    dispatch({ type: "LOADING_USER" });
+
     try {
       const infoUserVerify = await axiosClient.get("/verifyUser")
       
@@ -78,11 +85,13 @@ const UserProvider = ({children}) => {
 
     } catch (error) {
       console.log(error)
+      dispatch({ type: "SIGN_OUT" });
     }
   }
 
   const signOut = async() => {
     try {
+      localStorage.removeItem("token");
       dispatch({type: "SIGN_OUT"})
       navigate("/")
     } catch (error) {
@@ -97,7 +106,8 @@ const UserProvider = ({children}) => {
       verifyToken, 
       signOut, 
       infoUser: userState.infoUser, 
-      authStatus: userState.authStatus
+      authStatus: userState.authStatus,
+      loadingUser: userState.loadingUser
     }}>{children}</UserContext.Provider>
   )
 }

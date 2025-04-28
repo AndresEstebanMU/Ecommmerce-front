@@ -1,51 +1,67 @@
 import UserContext from "../../context/user/UserContext";
 import { useContext, useState, useEffect } from "react";
-import { Card, CardActions, CardContent, CardMedia, Button, Typography, Box, Container, Modal, TextField } from "@mui/material";
+import { Card, CardActions, CardContent, CardMedia, Button, Typography, Box, Container,/*  Modal, */ TextField, CircularProgress } from "@mui/material";
+
 
 const Profile = () => {
 
-    const {infoUser, userEdit} = useContext(UserContext)
+    const { infoUser, userEdit, loadingUser, verifyToken } = useContext(UserContext)
 
-    const {name, email, age} = infoUser
+    const {name, email/* , age */} = infoUser
 
     const [open, setOpen] = useState(false);
 
+    useEffect(() => {
+      verifyToken();
+    }, []);
+
     const [userForm, setUserForm] = useState({
       name: "",
-      age,
-      email
+      age: "",
+      email: ""
     })
 
-  const handleChange = async(e) => {
+    useEffect(() => {
+      if (infoUser && Object.keys(infoUser).length > 0) {
+        setUserForm({
+          name: infoUser.name || "",
+          email: infoUser.email || "",
+          age: infoUser.age || ""
+        });
+      }
+    }, [infoUser]);
+
+  const handleChange = (e) => {
     setUserForm({
       ...userForm,
       [e.target.name]: e.target.value
     })
   }
 
-  const sendData = () => {
+  const sendData = (e) => {
+    e.preventDefault();
     userEdit(userForm)
   }
 
-  useEffect(() => {
-    const updateData = () => {
-      return setUserForm({
-        ...userForm,
-        name,
-        email,
-        age
-      })
-    }
+ 
 
-    updateData()
-  }, [])
+  
+
+  
 
 
   const handleOpen = () => {
     setOpen(!open)
   }
 
-
+  if (loadingUser) {
+    return (
+      <Container sx={{ marginTop: "140px", textAlign: "center" }}>
+        <CircularProgress />
+        <Typography variant="h6">Cargando perfil...</Typography>
+      </Container>
+    );
+  }
 
   return (
     <div>
@@ -71,58 +87,60 @@ const Profile = () => {
             </Typography>
           </CardContent>
           <CardActions sx={{ justifyContent: "center" }}>
-            <Button onClick={handleOpen}>Edit User</Button>
+            <Button onClick={handleOpen}>{open ? "Close Edit" : "Edit User"}</Button>
             <Button size="small">Advanced Config</Button>
           </CardActions>
         </Card>
       </Container>
       <div>
-      <Box    
-          component="form"
-          onSubmit={(e) => sendData(e)}
-          display={!open ? "none" : "flex"}
-          sx={{
-            "& .MuiTextField-root": { m: 1, width: "45ch" },
-            justifyContent: "center",
-            alignContent: "center",
-            marginTop: "20px",
-            marginBottom: "40px"   
-          }}
-          noValidate
-          autoComplete="off"
-        >
-         
-          
-          <Typography id="modal-modal-title" variant="h6" component="h2" align="center">
-            Edita tu usuario!
-          </Typography>
+        {open && (
+          <Box
+            component="form"
+            onSubmit={sendData}
+            sx={{
+              "& .MuiTextField-root": { m: 1, width: "45ch" },
+              display: "flex",
+              justifyContent: "center",
+              alignContent: "center",
+              marginTop: "20px",
+              marginBottom: "40px"
+            }}
+            noValidate
+            autoComplete="off"
+          >
+
+
+            <Typography id="modal-modal-title" variant="h6" component="h2" align="center">
+              Edita tu usuario!
+            </Typography>
             <TextField
-                id="outlined-disabled"
-                label="Name"
-                value={userForm.name}
-                name="name"
-                onChange={handleChange}
-                type="text"
+              id="outlined-name"
+              label="Name"
+              value={userForm.name}
+              name="name"
+              onChange={handleChange}
+              type="text"
             />
             <TextField
-                id="outlined-disabled"
-                label="Age"
-                value={userForm.age}
-                type="number"
-                onChange={handleChange}
-                name="age"
+              id="outlined-age"
+              label="Age"
+              value={userForm.age}
+              type="number"
+              onChange={handleChange}
+              name="age"
             />
             <TextField
-                id="outlined-disabled"
-                label="Email"
-                value={userForm.email}
-                type="email"
-                onChange={handleChange}
-                name="email"
+              id="outlined-email"
+              label="Email"
+              value={userForm.email}
+              type="email"
+              onChange={handleChange}
+              name="email"
             />
             <Button type="submit">Send</Button>
-          
-        </Box>
+
+          </Box>
+        )}
       </div>
     </div>
   )
